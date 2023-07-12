@@ -195,16 +195,23 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 10px;
-    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
 }
-.player-control-icon{
+/* .player-control-icon{
     height: 1rem;
     margin-right: 3rem;
     opacity: 0.7;
+} */
+.player-controls i{
+    margin: 0 2rem 0 2rem;
 }
-.player-control-icon:hover{
+
+/* .player-control-icon:hover{
     opacity: 1;
+} */
+.player-controls i:hover{
+    cursor: pointer;
 }
 .playback-bar{
     display: flex;
