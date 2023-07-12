@@ -230,24 +230,30 @@
         <div class="music-player">
             <div class="album">
                 <div class="album-img">
-                    <img src="./assets/card1img.jpeg" alt="">
+                    <img src="./assets/card15img.jfif" alt="">
                 </div>
                 <div class="title">
-                    <p class="titleone">title</p>
-                    <p class="titletwo">artist name</p>
+                    <p class="titleone" id="title">title</p>
+                    <p class="titletwo" id="artist">artist name</p>
                 </div>
                 <div class="album-like">
                     <i class="fa-regular fa-heart"></i>
                 </div>
             </div>
             <div class="player">
-                <div class="player-controls">
+                <!-- <div class="player-controls">
                     <img src="./assets/player_icon1.png" class="player-control-icon" alt="">
-                    <img src="./assets/player_icon2.png" class="player-control-icon" alt="">
-                    <img src="./assets/player_icon3.png" style="opacity: 1; height: 2rem;" class="player-control-icon"
+                    <img src="./assets/player_icon2.png"  id="prev" class="player-control-icon" alt="">
+                    <img src="./assets/player_icon3.png" id="play" style="opacity: 1; height: 2rem;" class="player-control-icon"
                         alt="">
-                    <img src="./assets/player_icon4.png" class="player-control-icon" alt="">
+                    <img src="./assets/player_icon4.png" id="prev" class="player-control-icon" alt="">
                     <img src="./assets/player_icon5.png" class="player-control-icon" alt="">
+                </div> -->
+                <audio src="./music/track-1.mp3"></audio>
+                <div class="player-controls">
+                    <i class="fas fa-backward" id="prev" title="Previous"></i>
+                    <i class="fas fa-play" id="play" title="play" title="Play"></i>
+                    <i class="fas fa-forward" id="next" title="Next"></i>
                 </div>
                 <div class="playback-bar">
                     <span class="current-time">00:00</span>
@@ -274,6 +280,72 @@
         </div>
     </div>
     </div>
+  <script>
+    
+const music = document.querySelector("audio");
+const img = document.querySelector("img");
+const play = document.getElementById("play");
+const artist = document.getElementById("artist");
+const title = document.getElementById("title");
+const prev = document.getElementById("prev");
+const next = document.getElementById("next");
+
+const songs = [{
+    name:"track-1",
+    title:"Notion",
+    artist:"The Rare Occasions",
+},
+{
+    name:"track-2",
+    title:"Until I FOUND YOU",
+    artist:"Stephen Sanchez",
+},
+{
+    name:"track-3",
+    title:"METAMORPHOSIS",
+    artist:"INTERWORLD",
+},
+];
+
+ let isPlaying = false;
+
+ const playMusic = () => {
+    isPlaying = true;
+    music.play();
+    play.classList.replace("fa-play","fa-pause");
+};
+// for pause 
+const pauseMusic = () => {
+    isPlaying = false;
+    music.pause();
+    play.classList.replace("fa-pause","fa-play");
+};
+
+play.addEventListener("click", () => {
+    if(isPlaying){
+        pauseMusic();
+    }else{
+        playMusic();
+    }
+});
+// change music data
+const loadSong = (song) => {
+title.textContent = songs.title;
+artist.textContent = songs.title;
+music.src="music/"+song.name+".mp3";
+img.src="assets/" +song.name +".jfif";
+};  
+songIndex = 0;
+// loadSong(songs[1]);
+const nextSong = () => {
+    songIndex++;
+    loadSong(songs[songsIndex]);
+};
+next.addEventListener("click", nextSong);
+prev.addEventListener("click", prevSong);
+
+
+</script>
 </body>
 
 </html>
