@@ -190,15 +190,13 @@ body {
 .player{
     width: 40%;
 }
-.controls{
-    width: 35%;
-}
+
 .player-controls{
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 10px;
-    margin-left: 10px;
+    margin-left: 20px;
 }
 .player-control-icon{
     height: 1rem;
@@ -238,12 +236,22 @@ a{
     scale: 1.1;
 }
 .controls{
+    width: 35%;
     /* border: 2px solid red; */
-    margin-right: 2rem;
     height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.controlss-icon-vol{
+.adj{
+    margin-left: 100px;
     /* border: 2px solid white; */
-    margin-left: 300px;
-    margin-top: 15px;
+    display: flex;
+    height: 2.5rem;
+    width: 15rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.controls-icons{
+    /* border: 2px solid red; */
 }
