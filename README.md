@@ -1,3 +1,4 @@
+![image](https://github.com/Shashi-Srivastav/Mini-Project-Melodify-a-Spotify-Clone-App/assets/119119389/eb91672b-36ce-4c3a-895b-030be951dd1f)
 
 Introducing Melodify: Your Ultimate Musical Experience
 
