@@ -275,3 +275,49 @@ a{
 .controls-icons{
     /* border: 2px solid red; */
 }
+@media  (min-width: 100px) and (max-width:600px) {
+    .sidebar{
+        display: none;
+    }
+    .controls{
+        display: none;
+    }
+    .card{
+    width: 100px;
+    height: 150px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    overflow: hidden;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+    }
+    .card-title{
+        font-size: 0.71rem;
+    }
+    .card-info{
+        font-size: 0.5rem;
+    }
+    .album-img img{
+        height: 50px;
+        width: 50px;
+        margin: 0.5rem;
+    }
+    .album i{
+        position: relative;
+       left: 90px;
+    
+    }
+    .playback-bar{
+        display: none;
+    }
+    .hidden{
+        display: none;
+    }
+    .player{
+        margin-left: 10px;
+    }
+    .player-controls{
+        margin-bottom: 3px;
+        margin-left:50px ;
+    }
+}

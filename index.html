@@ -252,10 +252,12 @@
                 </div> -->
                 <!-- <audio src="./music/track-1.mp3"></audio> -->
                 <div class="player-controls">
-                    <i class="fa fa-backward"  onclick="previous_song()" id="pre" title="Previous"></i>
+                    <i class="fa-solid fa-shuffle hidden"></i>
+                    <i class="fa fa-backward hidden"  onclick="previous_song()" id="pre" title="Previous"></i>
                     <!-- <i class="fa fa-play" onclick="justplay()" id="play"title="Play"></i> -->
                     <button onclick="justplay()" id="play"><i class="fas fa-play" ></i></button>
-                    <i class="fa fa-forward" onclick="next_song()" id="next" title="Next"></i>
+                    <i class="fa fa-forward hidden" onclick="next_song()" id="next" title="Next"></i>
+                    <i class="fa-solid fa-repeat hidden"></i>
                 </div>
                 <div class="playback-bar">
                     <!-- <span class="current-time">00:00</span> -->
