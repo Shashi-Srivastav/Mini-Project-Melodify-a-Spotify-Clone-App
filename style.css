@@ -210,6 +210,19 @@ body {
 /* .player-control-icon:hover{
     opacity: 1;
 } */
+#artist{
+    font-size: 0.7rem;
+    font-weight: 100;
+}
+.show_song_no{
+    display: flex;
+}
+.player button{
+    background-color: black;
+    color: white;
+    border: none;
+    scale: 1.2;
+}
 .player-controls i:hover{
     cursor: pointer;
 }
@@ -255,7 +268,7 @@ a{
     /* border: 2px solid white; */
     display: flex;
     height: 2.5rem;
-    width: 15rem;
+    width: 20rem;
     justify-content: space-between;
     align-items: center;
 }
