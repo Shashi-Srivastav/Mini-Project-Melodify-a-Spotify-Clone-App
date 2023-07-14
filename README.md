@@ -1,3 +1,5 @@
+![image](https://github.com/Shashi-Srivastav/Mini-Project-Melodify-a-Spotify-Clone-App/assets/119119389/49946eaa-7cc5-4cc3-b5c6-964d1a078d66)
+
 Melodify - Spotify Clone
 
 Melodify is a web-based music streaming application that serves as a clone of Spotify. It allows users to play music files, change tracks, adjust volume levels, and enjoy their favorite songs. The project is built using HTML, CSS, and JavaScript.
