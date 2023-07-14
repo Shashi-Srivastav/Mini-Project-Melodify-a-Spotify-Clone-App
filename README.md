@@ -1,4 +1,5 @@
-![image](https://github.com/Shashi-Srivastav/Mini-Project-Melodify-a-Spotify-Clone-App/assets/119119389/49946eaa-7cc5-4cc3-b5c6-964d1a078d66)
+![image](https://github.com/Shashi-Srivastav/Mini-Project-Melodify-a-Spotify-Clone-App/assets/119119389/b9162b00-5260-4426-9323-c8abdbf7f4f3)
+
 
 Melodify - Spotify Clone
 
